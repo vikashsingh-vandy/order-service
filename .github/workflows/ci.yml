@@ -36,7 +36,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest
+          PYTHONPATH=. pytest --cov=src
 
       - name: Check coverage
         run: |
